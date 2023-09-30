@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #764da1;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.active {
+    color: rgb(121, 121, 224) !important;
+}
+
+.signup-btn {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.signup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner {
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #fff;
+}
+
+.app-text {
+    width: 50%;
+    float: left;
+}
+
+.app-text h1 {
+    font-size: 43px;
+    width: 640px;
+    float: left;
+    position: relative;
+    margin-left: 40px;
+}
+
+.app-text p {
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 50px;
+    line-height: 25px;
+    color: #e0dada;
+}
+
+.app-picture{
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+.app-picture img{
+    width: 50%;
+}
+.play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+}
+.play-btn-inner{
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.play-btn-inner .fa{
+    font-size: 13px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.quick-links{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #db1bf6, #19d7f8);
+    border-top-right-radius: 10px;
+}
+.quick-links ul{
+    display: inline-flex;
+    margin: 30px auto;
+    text-align: center;
+}
+.quick-links ul li{
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+.quick-links ul li .bi{
+    font-size: 25px;
+    color:#fff;
+}
+.quick-links ul li p{
+    margin: 15px;
+    font-size: 10px;
+    color: #fff;
+}
