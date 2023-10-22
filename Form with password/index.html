@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.passwordstrength.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <i class="bi bi-person-circle"></i>
+        <div class="input-box">
+            <span><i class="bi bi-person"></i></span>
+            <input type="text" placeholder="User name" required>
+        </div>
+        <div class="input-box"><span><i class="bi bi-envelope"></i></span>
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-box"><span><i class="bi bi-key"></i></span>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit"><i class="bi bi-box-arrow-in-left"></i>send</button>
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#password").passwordStrength();
+        });
+    </script>
+</body>
+
+</html>
