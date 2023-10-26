@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: inline-flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.wrapper a {
+    width: 220px;
+    height: 70px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ff0000;
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    margin: 10px;
+    font-family: sans-serif;
+    position: relative;
+    transition: .4s ease-out;
+}
+
+.wrapper a:hover {
+    color: #fff;
+    transition: .4s;
+}
+
+.wrapper a span {
+    background: #ff0000;
+    /* width: 220px;
+    height: 70px; */
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    z-index: -1;
+    transition: 0.4s ease-out;
+}
+
+.to-right {
+    width: 0px;
+    height: 70px;
+    left: 0;
+    top: 0;
+}
+
+.wrapper a:hover .to-right {
+    width: 220px;
+    transition: .4s;
+}
+
+.to-left {
+    width: 0px;
+    height: 70px;
+    right: 0;
+    top: 0;
+}
+
+.wrapper a:hover .to-left {
+    width: 220px;
+    transition: .4s;
+}
+
+.to-top {
+    width: 220px;
+    height: 0px;
+    right: 0;
+    bottom: 0;
+}
+
+.wrapper a:hover .to-top {
+    height: 70px;
+    transition: .4s;
+}
+
+.to-bottom {
+    width: 220px;
+    height: 0px;
+    right: 0;
+    top: 0;
+}
+
+.wrapper a:hover .to-bottom {
+    height: 70px;
+    transition: .4s;
+}
+
+.diagonal {
+    width: 0px;
+    height: 0px;
+    right: 0;
+    bottom: 0;
+}
+
+.wrapper a:hover .diagonal {
+    height: 70px;
+    width: 220px;
+    transition: .4s;
+}
